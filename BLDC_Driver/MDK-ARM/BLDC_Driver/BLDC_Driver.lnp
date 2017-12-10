@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp
+"bldc_driver\system_stm32f4xx.o"
+"bldc_driver\stm32f4xx_hal_flash_ramfunc.o"
+"bldc_driver\stm32f4xx_hal_gpio.o"
+"bldc_driver\stm32f4xx_hal_pwr_ex.o"
+"bldc_driver\stm32f4xx_hal_tim.o"
+"bldc_driver\stm32f4xx_hal_dma.o"
+"bldc_driver\stm32f4xx_hal.o"
+"bldc_driver\stm32f4xx_hal_flash_ex.o"
+"bldc_driver\stm32f4xx_hal_rcc_ex.o"
+"bldc_driver\stm32f4xx_hal_tim_ex.o"
+"bldc_driver\stm32f4xx_hal_uart.o"
+"bldc_driver\stm32f4xx_hal_flash.o"
+"bldc_driver\stm32f4xx_hal_cortex.o"
+"bldc_driver\stm32f4xx_hal_pwr.o"
+"bldc_driver\stm32f4xx_hal_rcc.o"
+"bldc_driver\stm32f4xx_hal_dma_ex.o"
+"bldc_driver\gpio.o"
+"bldc_driver\usart.o"
+"bldc_driver\stm32f4xx_hal_msp.o"
+"bldc_driver\main.o"
+"bldc_driver\stm32f4xx_it.o"
+"bldc_driver\startup_stm32f401xe.o"
+--library_type=microlib --strict --scatter "BLDC_Driver\BLDC_Driver.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BLDC_Driver.map" -o BLDC_Driver\BLDC_Driver.axf
